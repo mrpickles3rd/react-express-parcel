@@ -1,15 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { saySomething } from './js/thing';
+import { RenderSomething } from './js/thing';
 
 import './styles.css';
 
 function App() {
-  saySomething('Please work');
-
   return (
     <div>
+      <RenderSomething something="Pleas Work" />
       <h1>Hi There?</h1>
     </div>
   );
