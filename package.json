@@ -1,0 +1,34 @@
+{
+  "name": "react-express-parcel",
+  "version": "1.0.0",
+  "description": "setup react & express with parcel",
+  "main": "server/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrpickles3rd/react-express-parcel.git"
+  },
+  "keywords": [
+    "react",
+    "express",
+    "parcel"
+  ],
+  "author": "Me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrpickles3rd/react-express-parcel/issues"
+  },
+  "homepage": "https://github.com/mrpickles3rd/react-express-parcel#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.12.0"
+  },
+  "scripts": {
+    "setup": "npm run i",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development node ./server/index.js"
+  }
+}
