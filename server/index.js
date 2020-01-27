@@ -17,13 +17,10 @@ if (process.env.NODE_ENV === 'development') {
   const Bundler = require('parcel-bundler');
   const bundler = new Bundler(path.resolve(__dirname, '../src/index.html'));
 
-  // bundler.addAssetType('.ico', require.resolve('../src/templates/default/favicon.ico'))
-
   app.use(bundler.middleware());
 } else if (process.env.NODE_ENV === 'production') {
   console.info('Loading PROD server');
   app.use('/', express.static(path.join(__dirname, '../dist')));
-  // app.use('/', express.static(path.join(__dirname, '../favicon')));
 }
 
 app.listen(3000);
