@@ -12,3 +12,8 @@ Run with
 ```bash
   $ npm run dev
 ```
+
+Build (the basics) and run Prod with
+```bash
+  $ npm run build:start
+```
