@@ -2,6 +2,10 @@ const express = require('express');
 
 const app = express();
 
+app.get('/data', (unused, res) => {
+  return res.json({ a: '???????' });
+});
+
 if (process.env.NODE_ENV === 'development') {
   const path = require('path');
   const Bundler = require('parcel-bundler');
