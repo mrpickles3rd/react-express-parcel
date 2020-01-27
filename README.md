@@ -7,3 +7,8 @@ Setup with
 ```bash
   $ npm run setup
 ```
+
+Run with
+```bash
+  $ npm run dev
+```

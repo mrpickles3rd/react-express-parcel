@@ -5,13 +5,11 @@ import "regenerator-runtime/runtime";
 
 async function fetchData(setData) {
   const data = await fetch('http://localhost:3000/data').then(r => r.json());
-  setData(
-    JSON.stringify(data),
-  );
+  setData(JSON.stringify(data));
 }
 
 export function RenderSomething({ something = 'Oops This is wrong' }) {
-  const [data, setData] = useState('.');
+  const [data, setData] = useState(<React.Fragment>&nbsp;</React.Fragment>);
 
   useEffect(() => {
     fetchData(setData)
