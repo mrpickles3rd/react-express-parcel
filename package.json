@@ -22,7 +22,7 @@
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "regenerator-runtime": "^0.13.3",
